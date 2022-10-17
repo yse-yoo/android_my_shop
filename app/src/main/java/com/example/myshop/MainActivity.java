@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final String INFO = "info";
 
@@ -40,4 +41,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i(INFO, "onStop");
     }
 
+    @Override
+    public void onClick(View view) {
+        
+    }
 }
