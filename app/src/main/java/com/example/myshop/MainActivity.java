@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,6 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Log.i(INFO, "onClick");
+
+        EditText etEmail = findViewById(R.id.loginEmail);
+        String email = etEmail.getText().toString();
+        EditText etPassword = findViewById(R.id.loginPassword);
+        String password = etPassword.getText().toString();
+
+        Log.i(INFO, email);
+        Log.i(INFO, password);
     }
 
     @Override
