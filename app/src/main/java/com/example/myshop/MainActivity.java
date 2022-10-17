@@ -15,6 +15,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(INFO, "onCreate");
+
+        // add tap event
+        findViewById(R.id.loginButton).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        Log.i(INFO, "onClick");
     }
 
     @Override
@@ -41,8 +49,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.i(INFO, "onStop");
     }
 
-    @Override
-    public void onClick(View view) {
-        
-    }
 }
